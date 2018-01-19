@@ -43,7 +43,8 @@ public class Message {
   @Override
   public String toString() {
     return "Message{" +
-        "type=" + type +
+        "data=" + data +
+        ", type=" + type +
         '}';
   }
 }

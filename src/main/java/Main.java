@@ -18,6 +18,8 @@ public class Main {
 
     Socket socket = new Socket(url);
 
+    socket.setCodecEngine(new MinBinCodecEngine());
+
     socket.setListener(new BasicListener() {
 
       public void onConnected(Socket socket, Map<String, List<String>> headers) {
